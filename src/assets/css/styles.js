@@ -14,6 +14,7 @@ const COLOR = {
   whiteOpacity: 'rgba(247, 245, 240,.6)',
   blackOpacity: 'rgba(0,0,0,.1)',
   black: 'rgba(0,0,0,10)',
+  indonesia: ['#ff0000', '#ffffff'],
 };
 
 const SCALE = (_number) => {

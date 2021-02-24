@@ -3,6 +3,7 @@ import {Pressable, Text, View, Image} from 'react-native';
 import {WIDTH, HEIGHT, SCALE, COLOR} from '../assets/css/styles';
 import {IMAGES} from '../assets/images/images';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import LinearGradient from 'react-native-linear-gradient';
 
 const forImage = HEIGHT / 2.4;
 
@@ -73,7 +74,10 @@ export default Huruf = () => {
                 {values.eng.toUpperCase()}
               </Text>
             </View>
-            <View
+            <LinearGradient
+              start={{x: 0, y: 0}}
+              end={{x: 0, y: 0.6}}
+              colors={COLOR.indonesia}
               style={{
                 backgroundColor: COLOR.aqua,
                 paddingVertical: SCALE(5),
@@ -85,11 +89,11 @@ export default Huruf = () => {
                 style={{
                   fontFamily: 'PaytoneOne',
                   fontSize: SCALE(18),
-                  color: COLOR.white,
+                  color: COLOR.black,
                 }}>
                 {values.ind.toUpperCase()}
               </Text>
-            </View>
+            </LinearGradient>
           </View>
           <View style={{flex: 1}}>
             <Image
